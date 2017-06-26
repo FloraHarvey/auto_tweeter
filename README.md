@@ -1,19 +1,24 @@
-# Tweeter
+# Auto Tweeter
 
-**TODO: Add description**
+Automatic tweeter that tweets random text from a sample file every 1 minute.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `tweeter` to your list of dependencies in `mix.exs`:
+You will need a twitter account and sign up with the twitter api.
 
-```elixir
-def deps do
-  [{:tweeter, "~> 0.1.0"}]
-end
+Download the source code
+Run ```mix deps.get``` in command line
+Create a .bash_profile file in the root directory.
+Add the following lines, replacing XXX with your details:
 ```
+export TWEETER_TWITTER_CONSUMER_KEY=XXX
+export TWEETER_TWITTER_CONSUMER_SECRET=XXX
+export TWEETER_TWITTER_ACCESS_TOKEN=XXX
+export TWEETER_TWITTER_ACCESS_SECRET=XXX
+```
+Update the sample.txt file with your own choice of tweets
+Run ```mix run --no halt```
+Watch tweets from the sample file appear at 1 minute intervals on your Twitter profile
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/tweeter](https://hexdocs.pm/tweeter).
-
+## Technologies
+Elixir, Twitter API, quantum, extwitter.
