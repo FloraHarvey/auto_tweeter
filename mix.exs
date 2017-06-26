@@ -1,8 +1,8 @@
-defmodule PluralsightTweet.Mixfile do
+defmodule Tweeter.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :pluralsight_tweet,
+    [app: :tweeter,
      version: "0.1.0",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
@@ -16,7 +16,7 @@ defmodule PluralsightTweet.Mixfile do
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
     [extra_applications: [:logger, :quantum, :extwitter],
-     mod: {PluralsightTweet.Application, []}]
+     mod: {Tweeter.Application, []}]
   end
 
   # Dependencies can be Hex packages:

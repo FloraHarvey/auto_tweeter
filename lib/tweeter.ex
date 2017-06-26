@@ -1,6 +1,6 @@
-defmodule PluralsightTweet do
+defmodule Tweeter do
   @moduledoc """
-  Documentation for PluralsightTweet.
+  Documentation for Tweeter.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule PluralsightTweet do
 
   ## Examples
 
-      iex> PluralsightTweet.hello
+      iex> Tweeter.hello
       :world
 
   """

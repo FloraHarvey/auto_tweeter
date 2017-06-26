@@ -1,4 +1,4 @@
-defmodule PluralsightTweet.TweetServer do
+defmodule Tweeter.TweetServer do
   use GenServer
 
   def start_link() do
@@ -10,7 +10,7 @@ defmodule PluralsightTweet.TweetServer do
   end
 
   def handle_cast({:tweet, tweet}, _) do      # asynchronous
-    PluralsightTweet.Tweet.send(tweet)
+    Tweeter.Tweet.send(tweet)
     {:noreply, %{}}
   end
 

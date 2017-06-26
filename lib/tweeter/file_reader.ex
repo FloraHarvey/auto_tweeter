@@ -1,4 +1,4 @@
-defmodule PluralsightTweet.FileReader do
+defmodule Tweeter.FileReader do
   def get_strings_to_tweet(path) do
     File.read!(path)
     |> String.split("\n")
